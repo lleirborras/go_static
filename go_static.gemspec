@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name              = "go_static"
-  s.version           = "0.0.4"
+  s.version           = "0.0.5"
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Render views in Ruby on Rails written in html to an image (png, ...)"
   s.homepage          = "http://github.com/lleirborras/go_static"
   s.email             = "lleir@llegeix.me"
-  s.authors           = [ "Lleir Borras Metje" ]
+  s.authors           = [ "Lleïr Borràs Metje" ]
 
   s.files             = %w( README.md Rakefile MIT-LICENSE )
   s.files            += Dir.glob("lib/**/*")

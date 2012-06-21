@@ -53,7 +53,7 @@ module StaticHelper
     def make_png(options = {})
       html_string = render_to_string(:template => options[:template], :layout => options[:layout], :formats => options[:formats], :handlers => options[:handlers])
       w = GoStatic.new(options[:wkhtmltoimage])
-      w.png_from_string(html_string)
+      w.png_from_string(html_string, options)
     end
 
     def make_and_send_png(png_name, options={})
