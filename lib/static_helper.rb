@@ -11,9 +11,9 @@ module StaticHelper
   end
 
   def render_with_go_static(options = nil, *args, &block)
-    options[:format] ||= "png"
     if options.is_a?(Hash) && options.has_key?(:png)
       log_png_creation
+      options[:format] ||= "png"
       options[:basic_auth] = set_basic_auth(options)
       make_and_send_png(options.delete(:png), (GoStatic.config || {}).merge(options))
     else
@@ -22,9 +22,9 @@ module StaticHelper
   end
 
   def render_to_string_with_go_static(options = nil, *args, &block)
-    options[:format] ||= "png"
     if options.is_a?(Hash) && options.has_key?(:png)
       log_png_creation
+      options[:format] ||= "png"
       options[:basic_auth] = set_basic_auth(options)
       options.delete :png
       make_png((GoStatic.config || {}).merge(options))
