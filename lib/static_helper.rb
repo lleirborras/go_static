@@ -11,6 +11,7 @@ module StaticHelper
   end
 
   def render_with_go_static(options = nil, *args, &block)
+    options[:format] ||= "png"
     if options.is_a?(Hash) && options.has_key?(:png)
       log_png_creation
       options[:basic_auth] = set_basic_auth(options)
@@ -21,6 +22,7 @@ module StaticHelper
   end
 
   def render_to_string_with_go_static(options = nil, *args, &block)
+    options[:format] ||= "png"
     if options.is_a?(Hash) && options.has_key?(:png)
       log_png_creation
       options[:basic_auth] = set_basic_auth(options)
@@ -61,6 +63,7 @@ module StaticHelper
       options[:layout]      ||= false
       options[:template]    ||= File.join(controller_path, action_name)
       options[:disposition] ||= "inline"
+      options[:format] ||= "png"
       if options[:show_as_html]
         render :template => options[:template], :layout => options[:layout], :formats => options[:formats], :handlers => options[:handlers], :content_type => "text/html"
       else

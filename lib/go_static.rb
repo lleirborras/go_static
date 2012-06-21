@@ -106,6 +106,7 @@ class GoStatic
                                     :minimum_font_size,
                                     :quality,
                                     :width,
+                                    :height,
                                     :javascript_delay,
                                     :zoom], "", :numeric)
 
@@ -138,7 +139,6 @@ class GoStatic
                                     :cookie_jar,
                                     :encoding,
                                     :format,
-                                    :height,
                                     :load_error_handling,
                                     :password,
                                     :proxy,
