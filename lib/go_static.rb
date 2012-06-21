@@ -106,6 +106,7 @@ class GoStatic
                                     :minimum_font_size,
                                     :quality,
                                     :width,
+                                    :javascript_delay,
                                     :zoom], "", :numeric)
 
         r +=make_options(options, [ :custom_header_propagation,
@@ -138,7 +139,6 @@ class GoStatic
                                     :encoding,
                                     :format,
                                     :height,
-                                    :javascript_delay,
                                     :load_error_handling,
                                     :password,
                                     :proxy,
