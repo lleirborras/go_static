@@ -10,3 +10,5 @@ unless ActionView::Base.instance_methods.collect(&:to_s).include? "go_static_sty
   require 'go_static_helper'
   ActionView::Base.send :include, GoStaticHelper
 end
+
+Mime::Type.register 'image/png', :png

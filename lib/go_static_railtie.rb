@@ -27,4 +27,7 @@ if defined?(Rails)
 
   end
 
+  if Mime::Type.lookup_by_extension(:png).nil?
+    Mime::Type.register('image/png', :png)
+  end
 end
