@@ -15,7 +15,7 @@ More information about [wkhtmltoimage](http://code.google.com/p/wkhtmltopdf/) co
 
 Next:
 
-    script/plugin install git://github.com/mileszs/go_static.git
+    script/plugin install git://github.com/lleirborras/go_static.git
     script/generate go_static
 
 or add this to your Gemfile:
