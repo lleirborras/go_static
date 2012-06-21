@@ -1,0 +1,5 @@
+require 'rubygems'
+require 'test/unit'
+require 'rails'
+require 'action_controller/test_case'
+require 'go_static'
