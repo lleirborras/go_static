@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "go_static"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Render views in Ruby on Rails written in html to an image (png, ...)"
   s.homepage          = "http://github.com/lleirborras/go_static"
